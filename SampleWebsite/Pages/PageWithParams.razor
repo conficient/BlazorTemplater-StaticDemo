@@ -1,0 +1,9 @@
+﻿@page "/pageWithParams/{Id}"
+
+<p>This page we can't create a file for</p>
+<p>It's not possible to know what the parameter values would be</p>
+
+@code
+{
+    [Parameter] public string Id { get; set; }
+}

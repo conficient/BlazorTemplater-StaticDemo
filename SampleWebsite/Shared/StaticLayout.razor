@@ -1,0 +1,36 @@
+﻿@inherits LayoutComponentBase
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SampleWebsite</title>
+    <base href="~/" />
+    @* Use external link *@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    @*<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />*@
+
+    @* Todo: we are not copying static assets from wwwroot *@ 
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="SampleWebsite.styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="page">
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+        <div class="main">
+            <div class="top-row px-4">
+                <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            </div>
+
+            <div class="content px-4">
+                @Body
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

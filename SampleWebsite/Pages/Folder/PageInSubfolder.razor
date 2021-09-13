@@ -1,0 +1,13 @@
+﻿@page "/Folder/PageInSubfolder"
+
+<h3>Page In Subfolder</h3>
+
+<p>Also demonstrate that code runs!</p>
+@for(var i =count; i >1 ; i--)
+{
+    <p>There were @i green bottles, standing on the wall</p>
+}
+
+@code {
+    const int count = 10;
+}
